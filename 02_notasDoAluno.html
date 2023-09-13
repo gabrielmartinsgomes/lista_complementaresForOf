@@ -7,11 +7,24 @@
     */
 
     //Entrada
+    const notasAluno = [7, 5, 9, 8];
+    let notaMaior = 0;
+    let notaMenor = 0;
+    let media = 0;
+    let somas = 0;
 
 
     //Processamento
-
+    for(let notas of notasAluno) {
+        somas += notas;
+    }
+    notasAluno.sort((a, b) => a-b);
+    notaMenor = notasAluno[0];
+    notaMaior = notasAluno[notasAluno.length - 1];
+    media = somas / notasAluno.length;
 
     //Saída
+    alert(`Nota Maior:${notaMaior} \n Nota Menor: ${notaMenor} \n Média: ${media} \n`)
+    
 
 </script>

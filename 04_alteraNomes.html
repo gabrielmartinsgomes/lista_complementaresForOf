@@ -8,11 +8,19 @@
     */
 
     //Entrada
+    let nomes = ["Hilário", "Rafaela", "José", "Bárbara", "Fábio", "Júlia"];
+    let novo = []
 
 
     //Processamento
+    for(let acento of nomes){
+        if(acento.includes("á") || acento.includes("é") || acento.includes("í") || acento.includes("ó") || acento.includes("ú") ){
+            novo.push(acento.replace("á", "a").replace("é", "e").replace("í", "i").replace("ó", "o").replace("ú", "u"))
+        }
+    }
 
 
     //Saída
+    alert(novo)
 
 </script>

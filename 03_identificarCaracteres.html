@@ -6,11 +6,22 @@
     */
 
     //Entrada
+    const palavra = prompt(`Informe uma palavra`);
+    let vogal = [];
+    let consoantes = [];
 
 
     //Processamento
-
+    for(let letra of palavra){
+        if(letra.includes("a") || letra.includes("e") || letra.includes("i") || letra.includes("o") || letra.includes("u")) {
+            vogal.push(letra);
+        }
+        else {
+            consoantes.push(letra);
+        }
+    }
 
     //Saída
+    alert(`Vogais: ${vogal} \n Consoantes: ${consoantes} \n Quantidade de letras na palavra: ${palavra.length} \n Quantidade de Vogal: ${vogal.length} \n Quantidade de consoantes: ${consoantes.length}`)
 
 </script>
